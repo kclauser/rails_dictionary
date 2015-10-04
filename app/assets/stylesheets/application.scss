@@ -16,3 +16,20 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+body {
+  color: #fff;
+}
+
+table {
+  width: 66%;
+  background-color: black;
+}
+
+th {
+  text-align: center;
+}
+
+navbar {
+  background-color: black;
+}
