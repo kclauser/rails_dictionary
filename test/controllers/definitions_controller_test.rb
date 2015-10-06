@@ -15,10 +15,10 @@ class DefinitionsControllerTest < ActionController::TestCase
     get :new
     assert_response :success
   end
-
+#WHY DID THIS START FAILING WHEN I ADDED THE UNIQUENESS VALIDATOR? AND WHY DID HARDCODING BUILDING FIX IT?
   test "should create definition" do
     assert_difference('Definition.count') do
-      post :create, definition: { meaning: @definition.meaning, word: @definition.word }
+      post :create, definition: { meaning: @definition.meaning, word: "building" }
     end
 
     assert_redirected_to definition_path(assigns(:definition))
@@ -33,9 +33,9 @@ class DefinitionsControllerTest < ActionController::TestCase
     get :edit, id: @definition
     assert_response :success
   end
-
+#WHY DID THIS START FAILING WHEN I ADDED THE UNIQUENESS VALIDATOR?
   test "should update definition" do
-    patch :update, id: @definition, definition: { meaning: @definition.meaning, word: @definition.word }
+    patch :update, id: @definition, definition: { meaning: @definition.meaning, word: "building" }
     assert_redirected_to definition_path(assigns(:definition))
   end
 
