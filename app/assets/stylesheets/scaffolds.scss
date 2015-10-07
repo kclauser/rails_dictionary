@@ -1,5 +1,11 @@
 body {
-  background-image:image-url("SPACE.jpg");
+  // background-image:image-url("SPACE.jpg");
+  // background-size: cover;
+  background: image-url("SPACE.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   color: white;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
