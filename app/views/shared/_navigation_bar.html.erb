@@ -14,7 +14,6 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <%= yield :top_nav_links %>
         <li><a href="/definitions/new">Add A New Word</a></li>
         <li><%= link_to "Login", new_session_path %></li>
         <li><%= link_to "Logout", sessions_path, method: :delete, data: {confirm: "Are you sure you want to logout?"} %></li>
