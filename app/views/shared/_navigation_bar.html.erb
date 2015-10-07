@@ -15,8 +15,8 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="/definitions/new">Add A New Word</a></li>
-        <li><%= link_to "Login", new_session_path %></li>
-        <li><%= link_to "Logout", sessions_path, method: :delete, data: {confirm: "Are you sure you want to logout?"} %></li>
+        <li><%= link_to "Login", new_user_session_path %></li>
+        <li><%= link_to "Logout", destroy_user_session_path, method: :delete, data: {confirm: "Are you sure you want to logout?"} %></li>
       </ul>
       <form class="navbar-form navbar-left" role="search" action="/definitions/search" method="get">
         <div class="form-group">

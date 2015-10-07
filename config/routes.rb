@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :definitions do
     collection do
       get :search
