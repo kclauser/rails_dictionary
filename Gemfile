@@ -4,6 +4,9 @@ ruby '2.2.3'
 #Authentication
 gem 'devise'
 gem 'devise-bootstrap-views'
+gem 'omniauth'
+gem 'omniauth-github'
+gem 'dotenv-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
