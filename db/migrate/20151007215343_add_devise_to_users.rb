@@ -2,7 +2,6 @@ class AddDeviseToUsers < ActiveRecord::Migration
   def self.up
     remove_column :users, :email
     remove_column :users, :password
-    remove_column :users, :password_confirmation
 
     change_table(:users) do |t|
       ## Database authenticatable
