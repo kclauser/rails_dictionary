@@ -1,0 +1,7 @@
+<tr>
+  <td><%= definition.word %></td>
+  <td><%= definition.meaning %></td>
+  <td><%= link_to 'Show', definition %></td>
+  <td><%= link_to 'Edit', edit_definition_path(definition) %></td>
+  <td><%= link_to 'Destroy', definition, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+</tr>
